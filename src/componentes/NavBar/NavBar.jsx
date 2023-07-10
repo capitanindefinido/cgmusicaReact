@@ -1,27 +1,31 @@
-import CartWidget from '../CartWidget/CartWidget'
-import TituloPrincipal from '../TituloPrincipal/TituloPrincipal'
-import './NavBar.css'
+import CartWidget from "../CartWidget/CartWidget";
+import TituloPrincipal from "../TituloPrincipal/TituloPrincipal";
+import "./NavBar.css";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <header>
-        <TituloPrincipal saludo={"Tienda CG"}/>
-        <nav>
-            <ul>
-                <li>
-                    Discos
-                </li>
-                <li>
-                    Bolsos
-                </li>
-                <li>
-                    Poleras
-                </li>
-            </ul>
-        </nav>
-        <CartWidget/>
-    </header>
-  )
-}
+      <Link to="/">
+        <TituloPrincipal saludo={"Tienda CG"} />
+      </Link>
 
-export default NavBar
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/categoria/1"> Discos </NavLink>
+          </li>
+          <li>
+            <NavLink to="/categoria/2"> Bolsos </NavLink>
+          </li>
+          <li>
+            <NavLink to="/categoria/3"> Aros </NavLink>
+          </li>
+        </ul>
+      </nav>
+      <CartWidget />
+    </header>
+  );
+};
+
+export default NavBar;
