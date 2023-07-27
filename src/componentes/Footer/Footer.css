@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Raleway");
 
-header {
+footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #75DDDD(92, 230, 211);
   left: 0;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 

@@ -1,9 +1,27 @@
 .contenedorItem {
-    text-align: center;
-    border: 1px solid #e3e1e1;
-    margin: 3rem;
+  text-align: center;
+  border: 1px solid #e3e1e1;
+  margin: 3rem;
+  background-color: #004346;
+  &:hover {
+    padding: 8px;
+    transition: 3s;
+    transform: scale(0.95);
+  }
 }
 
 img {
-    width: 50vw;
+  width: 50vw;
+}
+
+h2 {
+  color: #75dddd;
+}
+
+h3 {
+  color: #75dddd;
+}
+
+p {
+  color: #75dddd;
 }

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const TituloPrincipal = ({saludo}) => {
+const TituloPrincipal = ({ saludo }) => {
   return (
     <div>
-        <h1 style={{color: 'white'}}>{saludo}</h1>
+      <h1>{saludo}</h1>
     </div>
-  )
-}
+  );
+};
 
-export default TituloPrincipal
+export default TituloPrincipal;

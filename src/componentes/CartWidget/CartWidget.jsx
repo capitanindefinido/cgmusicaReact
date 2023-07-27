@@ -1,13 +1,21 @@
-import './CartWidget.css'
+import "./CartWidget.css";
+import { useContext } from "react";
+import { CarritoContext } from "../../context/CarritoContext";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-    const imgCarrito = "https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping.png";
+  const { cantidadTotal } = useContext(CarritoContext);
+  const imgCarrito =
+    "https://w7.pngwing.com/pngs/618/1013/png-transparent-shopping-cart-online-shopping-empty-cart-angle-logo-shopping-centre.png";
   return (
     <div>
-        <img className='imgCarrito' src={imgCarrito} alt="Carrito de compras" />
-        <strong> 6 </strong>
+      <Link to="/cart">
+        <img className="imgCarrito" src={imgCarrito} alt="Carrito de compras" />
+        <br />
+        {cantidadTotal > 0 && <strong> {cantidadTotal} </strong>}
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default CartWidget
+export default CartWidget;

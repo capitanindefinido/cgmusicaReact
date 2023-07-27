@@ -1,7 +1,10 @@
-.imgCarrito{
-    width: 4rem;
+.imgCarrito {
+  width: 4rem;
+  border: 1px solid;
 }
 
 strong {
-    color: white;
+  color: black;
+  padding-left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
 }
