@@ -1,0 +1,32 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #09bc8a;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1rem;
+}
+
+.label{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-size: larger;
+    font-weight: 50;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+.input {
+    padding: 1rem;
+    border-radius: 1rem ;
+    border-color: #508991;
+    width: 50%;
+}

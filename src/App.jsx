@@ -10,7 +10,7 @@ import Checkout from "./componentes/Checkout/Checkout";
 
 const App = () => {
   return (
-    <div>
+    <div className="body">
       <BrowserRouter>
         <CarritoProvider>
           <NavBar />

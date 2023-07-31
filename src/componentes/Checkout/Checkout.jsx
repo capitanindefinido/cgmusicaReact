@@ -217,8 +217,9 @@ const Checkout = () => {
 
   return (
     <div>
-      <h2>Checkout</h2>
+      
       <form onSubmit={manejadorFormulario} className="formulario">
+      <h1 className="tituloCheck">c h e c k o u t</h1>
         {carrito.map((producto) => (
           <div key={producto.item.id}>
             <p>
@@ -229,8 +230,9 @@ const Checkout = () => {
         ))}
         <hr />
         <div className="form-group">
-          <label htmlFor=""> Nombre </label>
+          <label htmlFor="" className="label"> N o m b r e </label>
           <input
+            className="input"
             type="text"
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
@@ -238,8 +240,9 @@ const Checkout = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="">Apellido </label>
+          <label htmlFor="" className="label">A p e l l i d o  </label>
           <input
+            className="input"
             type="text"
             value={apellido}
             onChange={(e) => setApellido(e.target.value)}
@@ -247,8 +250,9 @@ const Checkout = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="">Telefono </label>
+          <label htmlFor="" className="label">T e l e f o n o  </label>
           <input
+            className="input"
             type="text"
             value={telefono}
             onChange={(e) => setTelefono(e.target.value)}
@@ -256,8 +260,9 @@ const Checkout = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="">Email </label>
+          <label htmlFor="" className="label">E m a i l  </label>
           <input
+            className="input"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -265,17 +270,19 @@ const Checkout = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="">Email Confirmación</label>
+          <label htmlFor="" className="label">C o n f i r m a r C o r r e o</label>
           <input
+            className="input"
             type="email"
             value={emailConfirmacion}
             onChange={(e) => setEmailConfirmacion(e.target.value)}
           />
         </div>
-
+        <br />  
         {error && <p style={{ color: "red" }}> {error} </p>}
-        <button type="submit"> Finalizar Compra </button>
+        <button type="submit" className="boton"> Finalizar Compra </button>
       </form>
+      <br />
       {ordenId && (
         <strong>¡Gracias por tu compra! Tu número de orden es {ordenId}</strong>
       )}

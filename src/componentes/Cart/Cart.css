@@ -1,0 +1,9 @@
+.pagoCarrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #09bc8a;
+    padding: 1rem;
+    margin: 1rem;
+}
